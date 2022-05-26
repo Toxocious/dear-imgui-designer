@@ -24,6 +24,11 @@ button.secondary {
   color: #d3d3d3;
 }
 
+button.glass {
+  background-color: transparent;
+  color: #2c2c2c;
+}
+
 button.disabled {
   cursor: default;
   background: lightgrey;

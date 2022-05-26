@@ -27,6 +27,12 @@ Secondary.args = {
   variant: 'secondary',
 };
 
+export const Glass = Template.bind({});
+Glass.args = {
+  text: 'Glass Button',
+  variant: 'glass',
+};
+
 export const Disabled = Template.bind({});
 Disabled.args = {
   text: 'Disabled Button',

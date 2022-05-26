@@ -3,6 +3,7 @@ import React from 'react';
 export const ButtonVariants = {
   primary: 'primary',
   secondary: 'secondary',
+  glass: 'glass',
   disabled: 'disabled',
 };
 
