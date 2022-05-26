@@ -18,6 +18,16 @@ body {
   padding: 0px;
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  gap: 10px;
+
+  padding: 5px;
+}
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
