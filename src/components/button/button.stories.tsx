@@ -1,6 +1,7 @@
 import { Meta, Story } from '@storybook/react';
 
-import { Button, ButtonProps } from './button';
+import { Button } from './button';
+import { ButtonProps } from '../../types/button';
 
 const meta: Meta = {
   title: 'Components/Button',
@@ -16,18 +17,18 @@ const Template: Story<ButtonProps> = (props) => <Button {...props} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-  children: 'Primary Button',
+  text: 'Primary Button',
   variant: 'primary',
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
-  children: 'Secondary Button',
+  text: 'Secondary Button',
   variant: 'secondary',
 };
 
 export const Disabled = Template.bind({});
 Disabled.args = {
-  children: 'Disabled Button',
+  text: 'Disabled Button',
   variant: 'disabled',
 };

@@ -1,37 +1,13 @@
-import React from 'react';
+import { ButtonProps, ButtonVariants } from '../../types/button';
+
 import './button.css';
 
-const ButtonVariants = {
-  primary: 'primary',
-  secondary: 'secondary',
-  disabled: 'disabled',
-};
+export const Button = (props: ButtonProps) => {
+  const { text, variant, isLoading } = props;
 
-export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
-  variant?: keyof typeof ButtonVariants;
-  isLoading?: boolean;
+  return (
+    <button className={ButtonVariants[variant]}>
+      {isLoading ? 'Loading' : text}
+    </button>
+  );
 };
-
-export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  (
-    {
-      type = 'button',
-      className = '',
-      variant = 'primary',
-      isLoading = false,
-      ...props
-    },
-    ref
-  ) => {
-    return (
-      <button
-        ref={ref}
-        type={type}
-        className={ButtonVariants[variant]}
-        {...props}
-      >
-        {props.children}
-      </button>
-    );
-  }
-);
