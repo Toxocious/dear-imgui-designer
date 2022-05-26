@@ -7,12 +7,10 @@ import { Preview } from './components/preview';
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <div className='container'>
-      <Sidebar />
-      <Preview />
-    </div>
-  </React.StrictMode>
+  <div className='container'>
+    <Sidebar />
+    <Preview />
+  </div>
 );
 
 /*
