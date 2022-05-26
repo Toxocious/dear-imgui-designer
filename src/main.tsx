@@ -5,12 +5,16 @@ import { Sidebar } from './components/sidebar';
 import { Preview } from './components/preview';
 
 import './index.css';
+import { ComponentBar } from './components/component-bar';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <div className='container'>
-    <Sidebar />
-    <Preview />
-  </div>
+  <>
+    <ComponentBar />
+    <div className='container'>
+      <Sidebar />
+      <Preview />
+    </div>
+  </>
 );
 
 /*

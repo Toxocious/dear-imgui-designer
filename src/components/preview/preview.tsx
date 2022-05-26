@@ -7,7 +7,7 @@ export const Preview = () => {
     <div className='preview'>
       <Stage
         width={window.innerWidth - 330}
-        height={window.innerHeight - 15}
+        height={window.innerHeight - 50}
         draggable={true}
       >
         <Layer>
