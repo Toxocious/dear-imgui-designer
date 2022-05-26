@@ -1,0 +1,35 @@
+button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  text-decoration: none;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(30px);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 150ms ease-in-out;
+}
+
+button.primary {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #2c2c2c;
+}
+
+button.secondary {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #d3d3d3;
+}
+
+button.disabled {
+  cursor: default;
+  background: lightgrey;
+  color: #333;
+}
+
+button:not(.disabled):hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
