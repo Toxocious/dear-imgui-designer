@@ -1,6 +1,7 @@
 import { ImVec2, ImVec4 } from './imgui-imvec';
 
 export type ImGuiComponent = {
+  id: number;
   name: string;
   label: string | undefined;
   parent: ImGuiComponent | undefined;
