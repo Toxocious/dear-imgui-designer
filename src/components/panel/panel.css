@@ -24,6 +24,15 @@
   width: 100%;
 }
 
+.panel .footer {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: right;
+
+  padding: 3px;
+}
+
 .panel .content {
   background: rgba(0, 0, 0, 0.2);
   border-radius: 6px;
