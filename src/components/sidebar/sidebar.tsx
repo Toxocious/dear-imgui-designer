@@ -1,3 +1,5 @@
+import { AllowedPanels } from '../../constants/panel-types';
+
 import { Panel } from '../panel';
 
 import './sidebar.css';
@@ -5,8 +7,14 @@ import './sidebar.css';
 export const Sidebar = () => {
   return (
     <div className='sidebar'>
-      <Panel title='Component Tree' content='...' />
-      <Panel title='Component Properties' content='...' />
+      {AllowedPanels.map((panel) => (
+        <Panel
+          key={panel.name}
+          title={panel.name}
+          content='...'
+          options={panel.options}
+        />
+      ))}
     </div>
   );
 };
