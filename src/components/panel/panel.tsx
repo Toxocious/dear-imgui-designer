@@ -16,7 +16,11 @@ export const Panel = (props: PanelProps): any => {
       ) : (
         <div className='footer'>
           {options.map((option: any) => (
-            <Button text={option.name} variant='primary' />
+            <Button
+              text={option.name}
+              variant='primary'
+              disabled={option.disabled}
+            />
           ))}
         </div>
       )}

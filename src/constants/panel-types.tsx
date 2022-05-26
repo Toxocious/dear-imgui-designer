@@ -5,8 +5,8 @@ export const AllowedPanels: AllowedPanelType[] = [
     name: 'Component Tree',
     content: 'You have no active components.',
     options: [
-      { name: '-', onClick: '' },
-      { name: '+', onClick: '' },
+      { name: '-', onClick: '', disabled: true },
+      { name: '+', onClick: '', disabled: false },
     ],
   },
   {
