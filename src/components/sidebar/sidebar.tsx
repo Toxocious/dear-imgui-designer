@@ -11,7 +11,7 @@ export const Sidebar = () => {
         <Panel
           key={panel.name}
           title={panel.name}
-          content='...'
+          content={panel.content}
           options={panel.options}
         />
       ))}

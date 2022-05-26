@@ -1,5 +1,6 @@
 export type AllowedPanelType = {
   name: string;
+  content: any;
   options: AllowedPanelOptionType[] | {};
 };
 
