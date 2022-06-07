@@ -5,13 +5,13 @@ import { mainStore } from './store/store';
 
 import { Sidebar } from './components/sidebar';
 import { Preview } from './components/preview';
-import { ComponentBar } from './components/component-bar';
+import { MenuBar } from './components/menu-bar';
 
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <Provider store={mainStore}>
-    <ComponentBar />
+    <MenuBar />
     <div className='container'>
       <Sidebar />
       <Preview />
