@@ -4,7 +4,7 @@ export const AllowedPanels: AllowedPanelType[] = [
   {
     name: 'Component Tree',
     content: 'You have no active components.',
-    options: [],
+    options: [{ name: '+', disabled: false }],
   },
   {
     name: 'Component Properties',

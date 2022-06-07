@@ -16,19 +16,31 @@
 }
 
 .panel .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
   height: 22px;
   letter-spacing: 1px;
-  padding: 3px 0px;
-  text-align: center;
+  padding: 0.5rem 0.5rem;
+  text-align: left;
   text-transform: uppercase;
   width: 100%;
 }
 
-.panel .footer {
+.panel .title .button-container {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 0.5rem;
   justify-content: right;
+
+  float: right;
+  right: 1rem;
+}
+
+.panel .title .button-container button {
+  font-weight: bold;
 }
 
 .panel .content {

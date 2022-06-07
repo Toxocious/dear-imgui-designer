@@ -19,6 +19,20 @@ ComponentTree.args = {
   title: 'Component Tree',
   content: 'Content',
 };
+ComponentTree.decorators = [
+  () => {
+    return (
+      <div style={{ display: 'flex', flexDirection: 'row', gap: 10 }}>
+        <Panel {...(ComponentTree.args as PanelProps)} />
+
+        <Panel
+          {...(ComponentTree.args as PanelProps)}
+          options={[{ name: '+', disabled: false }]}
+        />
+      </div>
+    );
+  },
+];
 
 export const ComponentProperties = PanelTemplate.bind({});
 ComponentProperties.args = {
