@@ -1,4 +1,8 @@
-button {
+.button-container {
+  position: relative;
+}
+
+.button-container button {
   display: inline-block;
   padding: 0.3rem 1rem;
   border: 0;
@@ -14,27 +18,68 @@ button {
   transition: 150ms ease-in-out;
 }
 
-button.primary {
+.button-container button.primary {
   background-color: rgba(255, 255, 255, 0.5);
   color: #2c2c2c;
 }
 
-button.secondary {
+.button-container button.secondary {
   background-color: rgba(255, 255, 255, 0.1);
   color: #d3d3d3;
 }
 
-button.glass {
+.button-container button.glass {
   background-color: transparent;
   color: #2c2c2c;
 }
 
-button.disabled {
+.button-container button.disabled {
   cursor: default;
   background: lightgrey;
   color: #333;
 }
 
-button:not(.disabled):hover {
+.button-container button:not(.disabled):hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
+
+.button-container div[role='dropdown-menu'] {
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(30px);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-transform: uppercase;
+
+  margin-top: 6px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  width: 200px;
+}
+
+.button-container div[role='dropdown-menu'].invisible {
+  visibility: hidden;
+}
+
+.button-container div[role='dropdown-menu'].visible {
+  visibility: visible;
+}
+
+.button-container div[role='dropdown-menu'] > a {
+  color: #a2a2a2;
+  padding: 0.2rem 0.5rem;
+  transition: color 100ms ease-in-out;
+  text-align: left;
+  text-decoration: none;
+  width: auto;
+}
+
+.button-container div[role='dropdown-menu'] > a:hover {
+  color: #f1f1f1;
+}
+
+
