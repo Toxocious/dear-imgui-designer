@@ -1,11 +1,9 @@
 .menu-bar {
-  background-color: rgba(255, 255, 255, 0.2);
-  border: 2px solid rgba(255, 255, 255, 0.35);
   border-left: none;
   border-right: none;
   border-top: none;
 
-  padding: 0.2rem 2rem;
+  padding: 0.2rem 0.5rem;
 
   position: relative;
 
