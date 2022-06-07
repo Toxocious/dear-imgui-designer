@@ -10,7 +10,7 @@ export const Panel = (props: PanelProps): any => {
     <div className='panel'>
       <div className='title'>{title}</div>
       <div className='content'>{content}</div>
-      {typeof options.length === 'undefined' ? (
+      {typeof options === 'undefined' ? (
         <></>
       ) : (
         <>
