@@ -1,5 +1,5 @@
 export type PanelProps = {
   title: string;
-  content: any;
+  childNodes: any;
   options: any;
 };

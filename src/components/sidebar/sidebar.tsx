@@ -1,20 +1,25 @@
-import { AllowedPanels } from '../../constants/panel-types';
+import { ImGuiComponents } from '../../constants/imgui-components';
 
-import { Panel } from '../panel';
+import { ComponentTree } from '../component-tree';
+import { ComponentProps } from '../component-props';
 
 import './sidebar.scss';
 
 export const Sidebar = () => {
   return (
     <div className='sidebar'>
-      {AllowedPanels.map((panel) => (
-        <Panel
-          key={panel.name}
-          title={panel.name}
-          content={panel.content}
-          options={panel.options}
-        />
-      ))}
+      <ComponentTree
+        name='Component Tree'
+        childNodes={[]}
+        options={[
+          {
+            name: '+',
+            subOptions: [...ImGuiComponents],
+          },
+        ]}
+      />
+
+      <ComponentProps name='Component Props' childNodes={[]} />
     </div>
   );
 };

@@ -2,10 +2,30 @@ import { nextComponentID } from '../utils/get-next-component-id';
 
 import { ImGuiComponent } from '../types/imgui-component';
 
-const initialState: ImGuiComponent[] = [];
+const initialState: ImGuiComponent[] = [
+  {
+    id: 0,
+    name: 'Container',
+    label: 'Container',
+    parent: undefined,
+    children: [],
+    value: undefined,
+    properties: {
+      height: 400,
+      width: 400,
+      padding: { x: 0, y: 0 },
+      backgroundColor: { r: 0, g: 0, b: 0, a: 1 },
+      textColor: { r: 255, g: 255, b: 255, a: 1 },
+      active: true,
+    },
+  },
+];
 
 export const componentTreeReducer = (state = initialState, action: any) => {
   switch (action.type) {
+    case 'componentTree/getComponents':
+      return state;
+
     case 'componentTree/addComponent':
       return [
         ...state,
@@ -34,19 +54,3 @@ export const componentTreeReducer = (state = initialState, action: any) => {
       return state;
   }
 };
-
-/*
-name: string;
-label: string | undefined;
-parent: ImGuiComponent | undefined;
-children: ImGuiComponent[] | undefined;
-value?: string | number | boolean | undefined;
-properties: {
-  height: number;
-  width: number;
-  padding: ImVec2;
-  backgroundColor: ImVec4;
-  textColor: ImVec4;
-  active: boolean;
-};
-*/

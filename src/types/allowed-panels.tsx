@@ -1,6 +1,6 @@
 export type AllowedPanelType = {
   name: string;
-  content: any;
+  childNodes: any;
   options?: AllowedPanelOptionType[];
 };
 

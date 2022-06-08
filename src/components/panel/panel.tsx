@@ -1,10 +1,12 @@
-import { PanelProps } from '../../types/panel';
 import { Button } from '../button';
+
+import { PanelProps } from '../../types/panel';
+import { ImGuiComponent } from '../../types/imgui-component';
 
 import './panel.scss';
 
 export const Panel = (props: PanelProps): any => {
-  const { title, content, options } = props;
+  const { title, childNodes, options } = props;
 
   return (
     <div className='panel'>
@@ -27,7 +29,13 @@ export const Panel = (props: PanelProps): any => {
           )}
         </div>
       </div>
-      <div className='content'>{content}</div>
+      <div className='content'>
+        {childNodes.length === 0
+          ? 'Select a component'
+          : childNodes.map((childNode: ImGuiComponent) => (
+              <div key={childNode.id}>{childNode.name}</div>
+            ))}
+      </div>
     </div>
   );
 };
