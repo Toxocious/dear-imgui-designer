@@ -12,6 +12,8 @@ export const Button = (props: ButtonProps) => {
     { disableFocusFirstItemOnClick: true }
   );
 
+  console.log(props, buttonProps);
+
   return (
     <>
       <button className={ButtonVariants[variant]} {...buttonProps}>

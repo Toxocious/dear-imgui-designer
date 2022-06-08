@@ -5,6 +5,7 @@ import './panel.css';
 
 export const Panel = (props: PanelProps): any => {
   const { title, content, options } = props;
+  console.log(props);
 
   return (
     <div className='panel'>
@@ -17,9 +18,11 @@ export const Panel = (props: PanelProps): any => {
             <>
               {options.map((option: any) => (
                 <Button
+                  key={option.name}
                   text={option.name}
                   variant='primary'
                   disabled={option.disabled}
+                  dropdownItems={[option.options]}
                 />
               ))}
             </>
