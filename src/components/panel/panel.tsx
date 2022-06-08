@@ -5,7 +5,6 @@ import './panel.css';
 
 export const Panel = (props: PanelProps): any => {
   const { title, content, options } = props;
-  console.log(props);
 
   return (
     <div className='panel'>

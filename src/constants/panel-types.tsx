@@ -1,3 +1,5 @@
+import { ImGuiComponents } from '../constants/imgui-components';
+
 import { AllowedPanelType } from '../types/allowed-panels';
 
 export const AllowedPanels: AllowedPanelType[] = [
@@ -7,10 +9,7 @@ export const AllowedPanels: AllowedPanelType[] = [
     options: [
       {
         name: '+',
-        options: {
-          name: 'Component #1',
-          onClick: undefined,
-        },
+        options: [...ImGuiComponents],
       },
     ],
   },

@@ -12,8 +12,6 @@ export const Button = (props: ButtonProps) => {
     { disableFocusFirstItemOnClick: true }
   );
 
-  console.log(props, buttonProps);
-
   return (
     <>
       <button className={ButtonVariants[variant]} {...buttonProps}>
@@ -22,9 +20,9 @@ export const Button = (props: ButtonProps) => {
 
       {variant !== 'disabled' && !isLoading && dropdownItems?.length > 0 ? (
         <div className={isOpen ? 'visible' : 'invisible'} role='dropdown-menu'>
-          {dropdownItems.map((item: any) => (
+          {dropdownItems[0].map((item: any) => (
             <a {...itemProps[0]} href='#'>
-              {item.name}
+              {item?.name}
             </a>
           ))}
         </div>
