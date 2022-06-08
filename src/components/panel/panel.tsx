@@ -1,7 +1,7 @@
 import { PanelProps } from '../../types/panel';
 import { Button } from '../button';
 
-import './panel.css';
+import './panel.scss';
 
 export const Panel = (props: PanelProps): any => {
   const { title, content, options } = props;

@@ -11,18 +11,18 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-}
 
-.menu-bar > h2 {
-  color: #fff;
-  margin: 0;
-}
+  & > button {
+    width: max-content;
+  }
 
-.menu-bar > button {
-  width: max-content;
-}
+  & > h2 {
+    color: #ffffff;
+    margin: 0;
+  }
 
-.menu-bar > .button-container {
-  display: flex;
-  gap: 1rem;
+  & > .button-container {
+    display: flex;
+    gap: 1rem;
+  }
 }

@@ -1,6 +1,6 @@
 import { Stage, Layer, Text } from 'react-konva';
 
-import './preview.css';
+import './preview.scss';
 
 export const Preview = () => {
   return (

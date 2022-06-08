@@ -2,7 +2,7 @@ import { AllowedPanels } from '../../constants/panel-types';
 
 import { Panel } from '../panel';
 
-import './sidebar.css';
+import './sidebar.scss';
 
 export const Sidebar = () => {
   return (

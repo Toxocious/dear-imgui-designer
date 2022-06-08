@@ -7,7 +7,7 @@ import { Sidebar } from './components/sidebar';
 import { Preview } from './components/preview';
 import { MenuBar } from './components/menu-bar';
 
-import './index.css';
+import './index.scss';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <Provider store={mainStore}>

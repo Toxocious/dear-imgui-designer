@@ -1,6 +1,6 @@
 import { Button } from '../button';
 
-import './menu-bar.css';
+import './menu-bar.scss';
 
 export const MenuBar = () => {
   return (

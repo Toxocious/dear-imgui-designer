@@ -2,7 +2,7 @@ import useDropdownMenu from 'react-accessible-dropdown-menu-hook';
 
 import { ButtonProps, ButtonVariants } from '../../types/button';
 
-import './button.css';
+import './button.scss';
 
 export const Button = (props: ButtonProps) => {
   const { text, variant, isLoading, dropdownItems } = props;
