@@ -1,7 +1,7 @@
 import { Panel } from '../panel';
 
 export const ComponentProps = (props: any) => {
-  const { name, options, childNodes } = props;
+  const { name, options, components } = props;
 
-  return <Panel title={name} options={options} childNodes={childNodes} />;
+  return <Panel title={name} options={options} components={components} />;
 };

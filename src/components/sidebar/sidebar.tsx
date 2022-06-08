@@ -1,6 +1,6 @@
 import { ImGuiComponents } from '../../constants/imgui-components';
 
-import { ComponentTree } from '../component-tree';
+import { COMPONENTS as ComponentsTree } from '../component-tree';
 import { ComponentProps } from '../component-props';
 
 import './sidebar.scss';
@@ -8,9 +8,9 @@ import './sidebar.scss';
 export const Sidebar = () => {
   return (
     <div className='sidebar'>
-      <ComponentTree
+      <ComponentsTree
         name='Component Tree'
-        childNodes={[]}
+        components={[]}
         options={[
           {
             name: '+',
@@ -19,7 +19,7 @@ export const Sidebar = () => {
         ]}
       />
 
-      <ComponentProps name='Component Props' childNodes={[]} />
+      <ComponentProps name='Component Props' components={[]} />
     </div>
   );
 };

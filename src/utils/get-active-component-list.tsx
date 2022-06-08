@@ -1,7 +1,7 @@
-import { mainStore } from '../store/store';
+export const GetActiveComponentList = (state: any) => {
+  console.log(state.componentTree);
 
-export const GetActiveComponentList = (): Object => {
-  const COMPONENT_LIST = mainStore.dispatch('componentTree/getComponents');
-
-  return [...COMPONENT_LIST] ?? [];
+  return {
+    components: state.componentTree,
+  };
 };

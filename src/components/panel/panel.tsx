@@ -6,7 +6,7 @@ import { ImGuiComponent } from '../../types/imgui-component';
 import './panel.scss';
 
 export const Panel = (props: PanelProps): any => {
-  const { title, childNodes, options } = props;
+  const { title, options, components } = props;
 
   return (
     <div className='panel'>
@@ -30,9 +30,9 @@ export const Panel = (props: PanelProps): any => {
         </div>
       </div>
       <div className='content'>
-        {childNodes.length === 0
+        {components.length === 0
           ? 'Select a component'
-          : childNodes.map((childNode: ImGuiComponent) => (
+          : components.map((childNode: ImGuiComponent) => (
               <div key={childNode.id}>{childNode.name}</div>
             ))}
       </div>
