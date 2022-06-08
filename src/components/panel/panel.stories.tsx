@@ -1,5 +1,7 @@
 import { Meta, Story } from '@storybook/react';
 
+import { ImGuiComponents } from '../../constants/imgui-components';
+
 import { Panel } from './panel';
 import { PanelProps } from '../../types/panel';
 
@@ -27,7 +29,12 @@ ComponentTree.decorators = [
 
         <Panel
           {...(ComponentTree.args as PanelProps)}
-          options={[{ name: '+', disabled: false }]}
+          options={[
+            {
+              name: '+',
+              subOptions: [...ImGuiComponents],
+            },
+          ]}
         />
       </div>
     );

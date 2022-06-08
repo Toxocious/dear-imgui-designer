@@ -20,8 +20,7 @@ export const Panel = (props: PanelProps): any => {
                   key={option.name}
                   text={option.name}
                   variant='primary'
-                  disabled={option.disabled}
-                  dropdownItems={[option.options]}
+                  dropdownItems={[...option.subOptions]}
                 />
               ))}
             </>

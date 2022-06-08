@@ -9,13 +9,12 @@ export const AllowedPanels: AllowedPanelType[] = [
     options: [
       {
         name: '+',
-        options: [...ImGuiComponents],
+        subOptions: [...ImGuiComponents],
       },
     ],
   },
   {
     name: 'Component Properties',
     content: 'Select a component.',
-    options: [],
   },
 ];
