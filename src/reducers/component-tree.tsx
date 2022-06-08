@@ -10,6 +10,7 @@ const initialState: ImGuiComponent[] = [
     parent: undefined,
     children: [],
     value: undefined,
+    selectable: false,
     properties: {
       height: 400,
       width: 400,

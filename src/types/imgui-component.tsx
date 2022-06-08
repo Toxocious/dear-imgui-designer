@@ -6,6 +6,7 @@ export type ImGuiComponent = {
   label: string | undefined;
   parent: ImGuiComponent | undefined;
   children: ImGuiComponent[] | undefined;
+  selectable: boolean;
   value?: string | number | boolean | undefined;
   properties: {
     height: number;

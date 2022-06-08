@@ -14,7 +14,9 @@ export const Sidebar = () => {
         options={[
           {
             name: '+',
-            subOptions: [...ImGuiComponents],
+            subOptions: [
+              ...ImGuiComponents.filter((component) => component.selectable),
+            ],
           },
         ]}
       />

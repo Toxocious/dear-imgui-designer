@@ -7,7 +7,6 @@ import { Panel } from '../panel';
 
 const ComponentTree = (props: any) => {
   const { name, options, components } = props;
-  console.log(props);
 
   return <Panel title={name} options={options} components={components} />;
 };
