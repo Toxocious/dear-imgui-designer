@@ -8,8 +8,8 @@ export const MenuBar = () => {
       <h2>ImGui Designer</h2>
 
       <div className='button-container'>
-        <Button text='New Template' variant='primary' />
-        <Button text='Generate Code' variant='primary' />
+        <Button text='New Template' variant='glass' />
+        <Button text='Generate Code' variant='glass' />
       </div>
     </div>
   );
