@@ -19,7 +19,7 @@ const PanelTemplate: Story<PanelProps> = (props) => <Panel {...props} />;
 export const ComponentTree = PanelTemplate.bind({});
 ComponentTree.args = {
   title: 'Component Tree',
-  content: 'Content',
+  components: [],
 };
 ComponentTree.decorators = [
   () => {
@@ -44,5 +44,5 @@ ComponentTree.decorators = [
 export const ComponentProperties = PanelTemplate.bind({});
 ComponentProperties.args = {
   title: 'Component Properties',
-  content: 'Content',
+  components: [],
 };
