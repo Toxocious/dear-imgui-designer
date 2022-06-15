@@ -1,5 +1,3 @@
-import { useState } from 'react';
-
 import { Button } from '../button';
 import { ComponentNode } from '../component-node';
 
@@ -10,8 +8,6 @@ import './panel.scss';
 
 export const Panel = (props: PanelProps): any => {
   const { title, options, components } = props;
-
-  const [panelComponents, setPanelComponents] = useState(components);
 
   return (
     <div className='panel'>

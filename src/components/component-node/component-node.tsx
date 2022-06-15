@@ -1,5 +1,3 @@
-import { useState } from 'react';
-
 import { ImGuiComponent } from '../../types/imgui-component';
 
 import './component-node.scss';
