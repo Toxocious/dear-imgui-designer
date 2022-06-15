@@ -1,4 +1,6 @@
 ul {
+  display: table;
+
   list-style: none;
   position: relative;
 
@@ -12,7 +14,7 @@ ul {
 
     position: relative;
     transition: all 50ms ease-in-out;
-    width: auto;
+    width: 100%;
 
     &:before {
       content: '~';
@@ -25,12 +27,24 @@ ul {
       cursor: pointer;
     }
 
-    span {
-      display: block;
+    div {
+      display: flex;
+      align-items: center;
+      gap: 5px;
 
       &:hover {
         color: #fff;
         font-weight: bold;
+
+        span {
+          font-weight: normal;
+        }
+      }
+
+      span {
+        border-radius: 6px;
+        background-color: rgba(126, 126, 126, 0.5);
+        font-size: 12px;
       }
     }
   }
