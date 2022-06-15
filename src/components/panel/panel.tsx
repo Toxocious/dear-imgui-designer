@@ -37,9 +37,10 @@ export const Panel = (props: PanelProps): any => {
           <ul>
             {components.map((component: ImGuiComponent) => (
               <ComponentNode
-                key={component.id}
                 id={component.id}
+                key={component.id}
                 name={component.name}
+                label={component.label}
                 children={component.children}
               />
             ))}

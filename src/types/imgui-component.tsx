@@ -3,7 +3,7 @@ import { ImVec2, ImVec4 } from './imgui-imvec';
 export type ImGuiComponent = {
   id: number;
   name: string;
-  label: string | undefined;
+  label: string;
   children: ImGuiComponent[] | undefined;
   selectable: boolean;
   value?: string | number | boolean | undefined;

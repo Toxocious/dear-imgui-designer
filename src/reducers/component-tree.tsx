@@ -63,12 +63,12 @@ const initialState: ImGuiComponent[] = [
         label: 'Content',
         children: [
           {
-            id: 1,
+            id: 5,
             name: 'Child',
             label: 'Content Child',
             children: [
               {
-                id: 5,
+                id: 6,
                 name: 'Checkbox',
                 label: 'Feature #1 Enabled',
                 children: [],
@@ -84,7 +84,7 @@ const initialState: ImGuiComponent[] = [
                 },
               },
               {
-                id: 6,
+                id: 7,
                 name: 'Checkbox',
                 label: 'Feature #2 Enabled',
                 children: [],
