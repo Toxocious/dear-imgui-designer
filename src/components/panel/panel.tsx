@@ -1,4 +1,7 @@
+import { useState } from 'react';
+
 import { Button } from '../button';
+import { ComponentNode } from '../component-node';
 
 import { PanelProps } from '../../types/panel';
 import { ImGuiComponent } from '../../types/imgui-component';
@@ -7,6 +10,8 @@ import './panel.scss';
 
 export const Panel = (props: PanelProps): any => {
   const { title, options, components } = props;
+
+  const [panelComponents, setPanelComponents] = useState(components);
 
   return (
     <div className='panel'>
@@ -30,11 +35,20 @@ export const Panel = (props: PanelProps): any => {
         </div>
       </div>
       <div className='content'>
-        {components.length === 0
-          ? 'Select a component'
-          : components.map((childNode: ImGuiComponent) => (
-              <div key={childNode.id}>{childNode.name}</div>
+        {components.length === 0 ? (
+          'Select a component'
+        ) : (
+          <ul>
+            {components.map((component: ImGuiComponent) => (
+              <ComponentNode
+                key={component.id}
+                id={component.id}
+                name={component.name}
+                children={component.children}
+              />
             ))}
+          </ul>
+        )}
       </div>
     </div>
   );

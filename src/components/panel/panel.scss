@@ -47,7 +47,7 @@
     border-radius: 6px;
     height: 100%;
     padding: 3px;
-    width: auto;
+    width: calc(100% - 6px);
 
     position: relative;
 
