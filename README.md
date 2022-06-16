@@ -5,6 +5,7 @@
   **Dear ImGUI Designer** is a browser-based live designer that allows the client to create beautiful Dear ImGUI mockups, and provides a source-code template mock-up based on the client's design.
 
   <img src="https://img.shields.io/github/issues/Toxocious/dear-imgui-designer?style=for-the-badge&logo=appveyor" />
+  <img src="https://img.shields.io/github/forks/Toxocious/dear-imgui-designer?style=for-the-badge&logo=appveyor" />
   <img src="https://img.shields.io/github/stars/Toxocious/dear-imgui-designer?style=for-the-badge&logo=appveyor" />
   <img src="https://img.shields.io/github/license/Toxocious/dear-imgui-designer?style=for-the-badge&logo=appveyor" />
   <a href="https://hits.seeyoufarm.com">
