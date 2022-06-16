@@ -7,8 +7,10 @@
   <img src="https://img.shields.io/github/issues/Toxocious/dear-imgui-designer?style=for-the-badge&logo=appveyor" />
   <img src="https://img.shields.io/github/stars/Toxocious/dear-imgui-designer?style=for-the-badge&logo=appveyor" />
   <img src="https://img.shields.io/github/license/Toxocious/dear-imgui-designer?style=for-the-badge&logo=appveyor" />
+  <a href="https://hits.seeyoufarm.com">
+    <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FToxocious%2Fdear-imgui-designer&count_bg=%234A618F&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false" />
+  </a>
 
-  [Live Demo](https://google.com/) &bull;
   [Report Bug](https://github.com/Toxocious/dear-imgui-designer/issues/new?assignees=&labels=&template=bug-report.md&title=) &bull;
   [Request Feature](https://github.com/Toxocious/dear-imgui-designer/issues/new?assignees=&labels=&template=feature-request.md&title=)
 </div>
